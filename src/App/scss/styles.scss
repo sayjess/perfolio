@@ -1,0 +1,4 @@
+//taking the forwarded files in index.html files in the global folder
+@forward 'globals';
+// @forward 'util'; dont need to forward, you can @use on the sass file where you want to use this folder
+@forward 'layout';
