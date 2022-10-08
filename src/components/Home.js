@@ -1,17 +1,36 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import Typewriter from 'typewriter-effect';
+import home from "../images/design/home-img.png" ;
+
 
 function Home(){
+    const typewriter = () => {
+    return <Typewriter
+    onInit={(typewriter) => {
+                typewriter.typeString("Aspiring Frontend Developer")
+                .pauseFor(5500)
+                .deleteAll()
+                .start();
+            }}
+    options={{
+        autoStart: true,
+        loop: true,
+        }}
+        />
+    }
     return(
-        <div className="home">
-            <div className="home__wrapper_one">
-                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" className="home__profile" alt="jess's profile"/>
+        <main className="home">
+            <div className="home__img">
+                <img src={home} className="home__profile" alt="jess's profile"/>
             </div>
-            <div className="home__wrapper__two">
-                <h1 className="home__intro">Hi, I'm Jess, Frontend Web Developer</h1>
-                <button className="home__download">Download CV</button>
-                <button className="home__contact">Contact</button>
+            <div className="home__desc"> 
+                <h1 className="home__intro">Hi, I'm Jess {typewriter()}</h1>
+                <a href={home} className="home__download" download>RESUME</a>
+                <a href=""
+                className="home__contact">CONTACT </a>
             </div>
-        </div>
+        </main>
     )
 }
 

@@ -1,0 +1,16 @@
+@use '../util/' as u;
+
+.home {
+    
+    &__download, &__contact{
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: u.$secondary-col;
+        color: u.$dark-mode-col;
+    }
+
+    &__contact {
+        margin-left: 20px;
+    }
+}

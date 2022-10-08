@@ -8,8 +8,8 @@ export default [
         name: "INTERACTIVE RATING COMPONENT",
         img: rating,
         description: "Placeholder Text",
-        github: "#",
-        view: "#",
+        github: "https://github.com/sayjess/interactive-rating-component",
+        view: "https://sayjess.github.io/interactive-rating-component/",
     },
     {
         id: 2,

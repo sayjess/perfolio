@@ -18,11 +18,11 @@ function App() {
 
   return (
     <div>  
-        {/* <Header /> */}
-        {/* <Home /> */}
-        <div className="container--small--proj">
+        <Header />
+        <Home />
+        {/* <div className="container--small--proj">
           {smallProjElement}
-        </div>
+        </div> */}
     </div>
   )
 }

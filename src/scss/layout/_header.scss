@@ -1,14 +1,16 @@
-// .header {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     margin-top: 20px;
-//     position: sticky;
-//     top: 20px;
-//     &__nav {
-//         a {
-//             margin: 20px;
-//             color: white;
-//         }
-//     }
-// }
+@use '../util/' as u;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 20px;
+    position: sticky;
+    top: 20px;
+    &__nav {
+        display: flex;
+        gap: 20px;
+        a {
+            color: u.$dark-mode-col;
+        }
+    }
+}
