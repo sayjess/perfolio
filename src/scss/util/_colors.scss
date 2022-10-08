@@ -1,8 +1,10 @@
 //css custom properties/variables
 
 $dark-mode-bg: hsl(222, 27%, 12%);
-$white-mode-bg: white;
-$dark-mode-col: white;
-$white-mode-col: hsl(222, 27%, 12%);
+$dark-mode-col: hsl(0, 0%, 100%);
 
-$secondary-col: rgb(85, 25, 139);
+$light-mode-bg: hsl(0, 0%, 100%);
+$light-mode-col: hsl(272, 70%, 32%);
+
+$dark-secondary-col: hsl(272, 71%, 32%);
+$light-secondary-col: hsl(272, 71%, 32%);

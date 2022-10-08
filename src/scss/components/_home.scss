@@ -1,16 +1,29 @@
 @use '../util/' as u;
 
 .home {
+
+    &__profile {
+        transform: scaleX(-1);
+        width: 100%;
+        
+    }
     
     &__download, &__contact{
         width: 100%;
         padding: 10px 20px;
-        border-radius: 5px;
-        background-color: u.$secondary-col;
-        color: u.$dark-mode-col;
+        border-radius: 5px;   
+    }
+    
+
+    &__intro {
+        font-size: 3em;
     }
 
     &__contact {
         margin-left: 20px;
+    }
+
+    .fa-phone, .fa-download {
+        padding-left: 2px;
     }
 }

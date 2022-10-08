@@ -1,0 +1,73 @@
+@use '../util/' as u;
+
+//set light mode styles
+body.light-mode {
+  background-color: u.$light-mode-bg;
+  color: u.$light-mode-col;
+  transition: background-color 0.3s ease;
+
+  a {
+    color: u.$light-mode-col;
+  }
+  .home__download, .home__contact {
+    background-color: u.$light-mode-bg;
+    color: u.$light-mode-col;
+    border: 2px solid u.$light-secondary-col;
+  }
+  h1{
+    color: u.$light-mode-col;
+  }
+}
+
+// set dark mode styles
+body.dark-mode {
+  background-color: #10171d;
+  color: #dfdfdf;
+  .home__download, .home__contact {
+    background-color: u.$dark-secondary-col;
+    color: u.$dark-mode-col;
+    border: 2px solid u.$dark-secondary-col;
+  }
+  a {
+    color: u.$dark-mode-col;
+  }
+}
+
+//toggle button
+input[type='checkbox'].dmcheck {
+  width: 30px;
+  height: 10px;
+  background: gray;
+  position: relative;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  vertical-align: 2px;
+  outline: none;
+
+  //set background color night mode
+  &:checked + label {
+    left: 20px;
+    background-color: u.$dark-mode-bg;
+  }
+//no use
+//   &:focus-visible {
+//     outline: solid 2px white;
+//   }
+//set background color white mode
+  & + label {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: absolute;
+    left: 2px;
+    background-color: u.$light-mode-bg;
+    border: 2px solid u.$dark-secondary-col;
+    // background: url("../../images/icons8-sun-24.png");
+  }
+}
