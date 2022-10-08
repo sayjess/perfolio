@@ -1,0 +1,15 @@
+.about {
+    padding: 40px;
+    &__wrapper {
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-around;
+
+        &__educ, &__work {
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+}
+

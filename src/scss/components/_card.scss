@@ -1,0 +1,65 @@
+.container--small--proj{
+    display: flex;
+    gap: 20px;
+}
+.card{
+    margin-top: 3em;
+    width: 11em;
+    height: 100%;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 20px;
+    
+    &--img {
+        width: 176px;
+        height: 176.3px;
+        padding: .5em;
+        border-radius: 20px;
+
+        &--hidden {
+            display: none;
+        }
+    
+        &--show{
+            display:block;
+        }
+    }
+
+    &--desc {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    
+    &--secondary{
+        height: 176.3px;
+    
+        
+        &--hidden {
+            display: none;
+        }
+
+        &--show{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-inline: 20px;
+            //set background image to blurred image
+            
+        }
+    }
+    
+    
+    .btn {
+        display: flex;
+        background-color: none;
+        gap: 10px;
+    }
+
+    &--title{
+        font-size: .53em;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
