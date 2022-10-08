@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import Typewriter from 'typewriter-effect';
-import home from "../images/design/home-img.png" ;
+import home from "../images/design/home.svg" ;
 
 
 function Home(){
@@ -26,9 +26,9 @@ function Home(){
             </div>
             <div className="home__desc"> 
                 <h1 className="home__intro">Hi, I'm Jess {typewriter()}</h1>
-                <a href={home} className="home__download" download>RESUME</a>
-                <a href=""
-                className="home__contact">CONTACT </a>
+                <a href={home} className="home__download" download>RESUME <i className="fa-solid fa-download"></i></a>
+                <a href="tel: +639271971915"
+                className="home__contact">CONTACT <i className="fa-solid fa-phone"></i></a>
             </div>
         </main>
     )
