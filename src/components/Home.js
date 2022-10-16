@@ -22,13 +22,18 @@ function Home(){
     return(
         <main className="home">
             <div className="home__img">
-                <img src={home} className="home__profile" alt="jess's profile"/>
+                <img src={home} className="home__profile" alt="Sitting Girl on a Laptop"/>
             </div>
             <div className="home__desc"> 
-                <h1 className="home__intro">Hi, I'm Jess {typewriter()}</h1>
-                <a href={home} className="home__download" download>RESUME <i className="fa-solid fa-download"></i></a>
-                <a href="tel: +639271971915"
-                className="home__contact">CONTACT <i className="fa-solid fa-phone"></i></a>
+                <h1 className="home__intro">
+                    <div className="text">Hi, I'm Jess</div>
+                    <div className="typewriter">{typewriter()}</div>
+                </h1>
+                <div className="home__btn">
+                    <a href={home} className="home__download" download>RESUME <i className="fa-solid fa-download"></i></a>
+                    <a href="tel: +639271971915"
+                    className="home__contact">CONTACT <i className="fa-solid fa-phone"></i></a>
+                </div>
             </div>
         </main>
     )

@@ -1,0 +1,90 @@
+@use "sass:math";
+@use 'hamburgers' as h;
+// Hamburger
+// ==================================================
+
+
+.hamburger {
+  padding: h.$hamburger-padding-y h.$hamburger-padding-x;
+  display: inline-block;
+  cursor: pointer;
+
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+
+  // Normalize (<button>)
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+
+  &:hover {
+    @if h.$hamburger-hover-use-filter == true {
+      filter: h.$hamburger-hover-filter;
+    }
+    @else {
+      opacity: h.$hamburger-hover-opacity;
+    }
+  }
+
+  &.is-active {
+    &:hover {
+      @if h.$hamburger-hover-use-filter == true {
+        filter: h.$hamburger-active-hover-filter;
+      }
+      @else {
+        opacity: h.$hamburger-active-hover-opacity;
+      }
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      background-color: h.$hamburger-active-layer-color;
+    }
+  }
+}
+
+.hamburger-box {
+  width: h.$hamburger-layer-width;
+  height: h.$hamburger-layer-height * 3 + h.$hamburger-layer-spacing * 2;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: math.div(h.$hamburger-layer-height, -2);
+
+  &,
+  &::before,
+  &::after {
+    width: h.$hamburger-layer-width;
+    height: h.$hamburger-layer-height;
+    background-color: h.$hamburger-layer-color;
+    border-radius: h.$hamburger-layer-border-radius;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+  }
+
+  &::before {
+    top: (h.$hamburger-layer-spacing + h.$hamburger-layer-height) * -1;
+  }
+
+  &::after {
+    bottom: (h.$hamburger-layer-spacing + h.$hamburger-layer-height) * -1;
+  }
+}
