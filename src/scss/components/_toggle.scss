@@ -5,17 +5,39 @@ body.light-mode {
   background-color: u.$light-mode-bg;
   color: u.$light-mode-col;
   transition: background-color 0.3s ease;
-
+  
   a {
-    color: u.$light-mode-col;
+    color: u.$light-mode-col-el;
   }
-  .home__download, .home__contact {
-    background-color: u.$light-mode-bg;
-    color: u.$light-mode-col;
-    border: 2px solid u.$light-secondary-col;
+
+  //nav
+  .header__nav{
+    .nav {
+      color: u.$light-mode-col-el;
+    }
+    &__contact {
+    background-color: u.$light-mode-col;
+    color: u.$light-mode-bg !important;
+    }
   }
-  h1{
-    color: u.$light-mode-col;
+
+  // home
+  .home{
+    &__download {
+      background-color: u.$light-secondary-col;
+      color: u.$light-mode-bg;
+      border: 2px solid u.$light-secondary-col;
+    }
+    &__contact {
+      border: 2px solid u.$dark-secondary-col;
+      color: u.$light-mode-col;
+    }
+    h1{
+      color: u.$light-mode-col;
+    }
+    .text{
+        color: u.$light-mode-col-el;
+    }
   }
 }
 
@@ -23,9 +45,12 @@ body.light-mode {
 body.dark-mode {
   background-color: #10171d;
   color: #dfdfdf;
-  .home__download, .home__contact {
+  .home__download{
     background-color: u.$dark-secondary-col;
     color: u.$dark-mode-col;
+    border: 2px solid u.$dark-secondary-col;
+  }
+  .home__contact {
     border: 2px solid u.$dark-secondary-col;
   }
   a {
@@ -49,14 +74,14 @@ input[type='checkbox'].dmcheck {
 
   //set background color night mode
   &:checked + label {
-    left: 20px;
+    left: 17px;
     background-color: u.$dark-mode-bg;
   }
 //no use
 //   &:focus-visible {
 //     outline: solid 2px white;
 //   }
-//set background color white mode
+//set background color light mode
   & + label {
     display: inline-block;
     width: 18px;
@@ -65,7 +90,7 @@ input[type='checkbox'].dmcheck {
     transition: all 0.3s ease;
     cursor: pointer;
     position: absolute;
-    left: 2px;
+    left: 4px;
     background-color: u.$light-mode-bg;
     border: 2px solid u.$dark-secondary-col;
     // background: url("../../images/icons8-sun-24.png");
