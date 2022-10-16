@@ -2,3 +2,55 @@
     display: flex;
     gap: min(5vh, 2rem);
 }
+
+nav {
+    .off {
+        @media (max-width: 35em) {
+            transform: translateX(100%);
+            transition: transform 350ms ease-in;
+        }
+    }
+    .on {
+        @media (max-width: 35em) {
+            transform: translateX(0%);
+            transition: transform 350ms ease-in;
+        }
+    }
+    li {
+    position: relative;
+        @media (max-width: 35em) {
+            padding: min(5vh, 1rem);
+            }
+    }
+
+    li:before {
+        content: '';
+        background: #55188c;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in;
+        
+    }
+    li:hover:before {
+        width: 100%;
+        transition: all 0.3s ease-out;
+    }
+
+
+    li:hover {
+        background-position: 0;
+        // @media (max-width:35em) {
+        //     border-radius: 5px;
+        //     background-color: hsl(0 0 100% / 0.09);   
+        // }
+    }
+    // li:active {
+    //     @media (max-width: 35em) {
+    //         background-color: hsl(0 0 100% / 0.1);
+    //     }
+    // }
+}

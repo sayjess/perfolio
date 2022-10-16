@@ -1,5 +1,6 @@
 @use '../util/' as u;
 
+
 .header {
     align-items: center;
     margin-block: 2rem;
@@ -47,19 +48,6 @@
                 @supports (backdrop-filter: blur(1rem)){
                     backdrop-filter: blur(1rem);
                 }
-            }
-        }
-
-        .off {
-            @media (max-width: 35em) {
-                transform: translateX(100%);
-                transition: transform 350ms ease-in;
-            }
-        }
-        .on {
-            @media (max-width: 35em) {
-                transform: translateX(0%);
-                transition: transform 350ms ease-in;
             }
         }
     }   
