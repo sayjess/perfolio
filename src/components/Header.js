@@ -7,14 +7,6 @@ import Toggle from './Toggle';
 function Header() {
     const darkMode = useDarkMode(false);
     const [btn, setBtn] = React.useState(false);
-    const navAnimateFalse = {
-        transform: "translateX(100%)",
-        transition: "transform 350ms ease-in"
-    }
-    const navAnimateTrue = {
-        transform: "translateX(0%)",
-        transition: "transform 350ms ease-in"
-    }
 
     function btnHandler() {
         setBtn(newVal => !newVal)
@@ -24,20 +16,6 @@ function Header() {
 
     const toggleSideBar = btn ? "nav__primary on flex": "nav__primary off flex";
 
-    // const mobileNavStyle = window.innerWidth < 560 ? navAnimateTrue : navAnimateFalse;
-
-
-
-    //size
-    // const windowSize = window.innerWidth <= 559 ? mobileNavStyle : console.log("large");
-    // let mobileStyle
-    // if(window.innerWidth <= 559 && btn){
-    //     transform: "translateX(100%)",
-    //     transition: "transform 350ms ease-in"
-    // } else if (window.innerWidth <= 559 && !btn){
-    //     navAnimateFalse
-    // }
-        
     return(
         <header className="header flex">
             <Toggle checked={darkMode.value} onChange={darkMode.toggle}/>
