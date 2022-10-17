@@ -11,11 +11,18 @@
     &__desc {
         align-items: center;
         margin: 0;
-        @media (max-width: 900px) {
+        @media (max-width: 768px) {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
+        }
+        p {
+            padding-bottom: 20px;
+            @media (max-width: 768px) {
+                text-align: center;
+                
+            }
         }
     }
     
@@ -24,7 +31,7 @@
         padding: 10px 20px;
         border-radius: 5px;
         font-size: 1vw;
-        @media (max-width: 900px) {
+        @media (max-width: 768px) {
             font-size: 1.5vw;
         }
     }
@@ -32,7 +39,7 @@
 
     &__intro {
         font-size: 2.9vw;
-        @media (max-width: 900px) {
+        @media (max-width: 768px) {
             font-size: 5vw;
             
         }
@@ -47,7 +54,7 @@
     }
 
     .typewriter, .text {
-        @media (max-width: 900px) {
+        @media (max-width: 768px) {
             text-align: center;
         }
     }

@@ -1,5 +1,5 @@
 import smallProj from '../containers/smallproj';
-import Card from "./Card";
+import Card from "./OtherProjectsCard";
 
 function OtherProjects(){
     const smallProjElement = smallProj.map(data => {
