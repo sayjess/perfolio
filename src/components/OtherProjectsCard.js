@@ -2,7 +2,7 @@
 import img from '../images/small-proj/interactive-rating-component.png'
 import React from 'react'
 
-function Card(props){
+function OtherProjectsCard(props){
     const [isHovering, setIsHovering] = React.useState(false)
     const hoverHandler = () => {
         setIsHovering(prevVal => !prevVal)
@@ -33,4 +33,4 @@ function Card(props){
     )
 }
 
-export default Card;
+export default OtherProjectsCard;

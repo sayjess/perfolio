@@ -3,16 +3,12 @@
 
 .header {
     align-items: center;
-    margin-block: 2rem;
+    padding-block: 1.5rem;
     justify-content: space-between;
     position: sticky;
     z-index: 3;
-    top: 20px;
-    @media (min-width: 35rem) {
-        background-color: hsl(0 0 100% / 0.09); 
-        @supports (backdrop-filter: blur(1rem)){
-            backdrop-filter: blur(1rem);
-        }   
+    top: 0;
+    
     }
 
     .mobile-nav-toggle{
@@ -22,7 +18,7 @@
         // top: -0.156rem;
         right: 0;
         z-index: 9999;
-        @media (min-width: 35rem) {
+        @media (min-width: 768px) {
             display: none;
             
         }
@@ -34,9 +30,7 @@
             list-style: none;
             padding: 0;
             margin: 0;
-            // background-color: hsl(0 0 100% / 0.02); //darkmode
-            // background-color: hsl(0 0 0% / 0.2); //lightmode
-            @media (max-width: 35em) {
+            @media (max-width: 768px) {
                 z-index: 1000;
                 flex-direction: column;
                 position: fixed;
@@ -51,4 +45,3 @@
             }
         }
     }   
-}

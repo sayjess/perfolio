@@ -1,19 +1,75 @@
 @use '../util/' as u;
+//toggle button
+input[type='checkbox'].dmcheck {
+  width: 30px;
+  height: 10px;
+  background: gray;
+  position: relative;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  vertical-align: 2px;
+  outline: none;
 
-//set light mode styles
+  //set background color dark mode
+  &:checked + label {
+    left: 17px;
+    background-color: u.$dark-mode-bg;
+  }
+
+//set background color light mode
+  & + label {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: absolute;
+    left: 4px;
+    background-color: u.$light-mode-bg;
+    border: 2px solid u.$dark-secondary-col;
+  }
+}
+
+//LIGHT MODE
 body.light-mode {
   background-color: u.$light-mode-bg;
   color: u.$light-mode-col;
   transition: background-color 0.3s ease;
-  
+  //GLOBAL VARIABLES
   a {
     color: u.$light-mode-col-el;
   }
+  p {
+    color: u.$light-mode-col-el;
+  }
 
-  //nav
-  .header__nav{
-    .nav {
+  //HEADER
+  //HAMBURGER
+  .hamburger {
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      background-color: u.$light-mode-col-el;
+    }
+  }
+
+  .hamburger-inner {
+    &, &::before, &::after{
+      background-color: u.$light-mode-col-el;
+    }
+  }
+  .header{
+
+    $hamburger-layer-color: white;
+    nav {
       color: u.$light-mode-col-el;
+      li:active {
+        background-color: hsl(0 0 0% / 0.2);
+      }
     }
     &__contact {
     background-color: u.$light-mode-col;
@@ -21,7 +77,7 @@ body.light-mode {
     }
   }
 
-  // home
+  //HOME
   .home{
     &__download {
       background-color: u.$light-secondary-col;
@@ -41,58 +97,44 @@ body.light-mode {
   }
 }
 
-// set dark mode styles
+// DARK MODE
 body.dark-mode {
   background-color: #10171d;
-  color: #dfdfdf;
-  .home__download{
-    background-color: u.$dark-secondary-col;
-    color: u.$dark-mode-col;
-    border: 2px solid u.$dark-secondary-col;
-  }
-  .home__contact {
-    border: 2px solid u.$dark-secondary-col;
-  }
+  color: #dfdfdf;  //GLOBAL VARIABLES
   a {
     color: u.$dark-mode-col;
   }
-}
-
-//toggle button
-input[type='checkbox'].dmcheck {
-  width: 30px;
-  height: 10px;
-  background: gray;
-  position: relative;
-  border-radius: 5px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  vertical-align: 2px;
-  outline: none;
-
-  //set background color night mode
-  &:checked + label {
-    left: 17px;
-    background-color: u.$dark-mode-bg;
+  //HEADER
+  //HAMBURGER
+  .hamburger {
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      background-color: u.$dark-mode-col;
+    }
   }
-//no use
-//   &:focus-visible {
-//     outline: solid 2px white;
-//   }
-//set background color light mode
-  & + label {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    position: absolute;
-    left: 4px;
-    background-color: u.$light-mode-bg;
-    border: 2px solid u.$dark-secondary-col;
-    // background: url("../../images/icons8-sun-24.png");
+  .hamburger.inner {
+    &, &::before, &::after{
+      background-color: u.$dark-mode-col;
+    }
+  }
+
+  nav {
+    li:active{
+      background-color: hsl(0 0 100% / 0.02);
+    }
+  }
+  //HOME
+  .home {
+    &__download{
+      background-color: u.$dark-secondary-col;
+      color: u.$dark-mode-col;
+      border: 2px solid u.$dark-secondary-col;
+    }
+    &__contact {
+      border: 2px solid u.$dark-secondary-col;
+    }
   }
 }
+
+

@@ -40,12 +40,6 @@
         opacity: h.$hamburger-active-hover-opacity;
       }
     }
-
-    .hamburger-inner,
-    .hamburger-inner::before,
-    .hamburger-inner::after {
-      background-color: h.$hamburger-active-layer-color;
-    }
   }
 }
 
@@ -66,7 +60,7 @@
   &::after {
     width: h.$hamburger-layer-width;
     height: h.$hamburger-layer-height;
-    background-color: h.$hamburger-layer-color;
+    // background-color: h.$hamburger-layer-color;
     border-radius: h.$hamburger-layer-border-radius;
     position: absolute;
     transition-property: transform;
