@@ -40,14 +40,15 @@ body.light-mode {
   color: u.$light-mode-col;
   transition: background-color 0.3s ease;
   //GLOBAL VARIABLES
-  a {
-    color: u.$light-mode-col-el;
-  }
-  p {
-    color: u.$light-mode-col-el;
-  }
 
+  
+  a, p, h2 {
+    color: u.$light-mode-col-el;
+  }
   //HEADER
+  header{
+    background-color: u.$light-mode-bg;   
+  }
   //HAMBURGER
   .hamburger {
     .hamburger-inner,
@@ -95,16 +96,25 @@ body.light-mode {
         color: u.$light-mode-col-el;
     }
   }
+
+  //contact
+  .thank-you{
+    color: u.$light-secondary-col;
+  }
 }
 
 // DARK MODE
 body.dark-mode {
-  background-color: #10171d;
-  color: #dfdfdf;  //GLOBAL VARIABLES
+  background-color: u.$dark-mode-bg;
+  color: u.$dark-mode-col;  //GLOBAL VARIABLES
   a {
     color: u.$dark-mode-col;
   }
   //HEADER
+  header{
+    background-color: u.$dark-mode-bg;   
+  }
+
   //HAMBURGER
   .hamburger {
     .hamburger-inner,
