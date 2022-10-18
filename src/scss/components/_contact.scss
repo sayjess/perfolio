@@ -1,45 +1,92 @@
-body.active-modal {
-    overflow-y: hidden;
+@use '../util/' as u;
+@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
+
+.contact__initial {
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.btn-modal {
-    padding: 10px 20px;
-    display: block;
-    margin: 100px auto 0;
-    font-size: 18px;
+.contact__msg {
+    text-align: justify;
 }
 
-.modal, .overlay {
-    z-index: 500;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
+.socials{
+    .fa-brands{
+        font-size: 1.5rem;
+    }
+}
+
+// .close-modal {
+//     width: 15%;
+//     margin-top: 2rem;
+//     border-radius: 5px;
+//     padding: 7px;
+//     cursor: pointer;
+//     background: u.$dark-secondary-col;
+//     color: white;
+//     border: none;
+//     &:hover {
+//         background-color: hsl(272, 73%, 36%);
+//     }
+//     &:active{
+//         background-color: hsl(272, 79%, 41%);
+//     }
+// }
+
+.thank-you {
+    font-size: 5vw;
+    font-family: 'Sarina', cursive;
+}
+
+.container {
+    position: relative;
+}
+
+.modal {
+    position: absolute;
+    background-color: hsl(0 0 100% / 0.09);
+    backdrop-filter: blur(1rem);
+    margin: 0;
+    padding: 0;
     right: 0;
-    bottom: 0;
-    position: fixed;
+    border-radius: 5px;
 }
 
-.overlay {
-    background: rgba(49,49,49,0.8);
+.modal-on {
+    transform: translateX(0%);
+    transition: transform 350ms ease-in;
 }
+.modal-off {
+    transform: translateX(120%);
+    transition: transform 350ms ease-out;
+}
+
+
 .modal-content {
-    z-index: 501;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    line-height: 1.4;
-    background: #f1f1f1;
-    padding: 14px 28px;
-    border-radius: 3px;
-    max-width: 600px;
-    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    
+
+    .modal-cntnt-first {
+        display: flex;
+        align-items: center;
+        h2 {
+            font-size: 0.8vw;
+            padding: 20px 150px 20px 10px;
+            margin: 0;     
+        }
+        i {
+            padding-left: 10px;
+            font-size: 1.3em;
+            color: u.$light-secondary-col
+        }
+    }
+    .close-modal {
+        margin: 5px 10px 0 0;
+        
+    }
+
 }
 
-.close-modal {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 7px;
-}
+
+
