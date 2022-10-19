@@ -20,10 +20,10 @@ function OtherProjectsCard(props){
                     {props.data.description}
                 </p>
                 <div className='btn'>
-                    <a href={props.data.github} className='btn btn--github'>
+                    <a href={props.data.github} className='btn btn--github' rel="noreferrer noopener" target="_blank">
                         <i className="fa-brands fa-github"></i>
                     </a>
-                    <a href={props.data.view} className='btn btn--view'>
+                    <a href={props.data.view} className='btn btn--view' rel="noreferrer noopener" target="_blank">
                         <i className="fa-solid fa-eye"></i>
                     </a>
                 </div>

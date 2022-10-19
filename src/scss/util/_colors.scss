@@ -1,13 +1,16 @@
 //css custom properties/variables
 
-
+//dark mode
 $dark-mode-bg: hsl(222, 27%, 12%);
 $dark-mode-col: hsl(0, 0%, 100%);
+$dark-mode-col-el:hsl(0, 0%, 100%);
+$dark-mode-col-blur: hsl(0 0 100% / 0.09);
 
-
-$light-mode-bg: hsl(0, 0%, 100%);
+//light mode
+$light-mode-bg: hsl(0, 0%, 96%);
 $light-mode-col: hsl(272, 71%, 32%);
 $light-mode-col-el: hsl(0, 41%, 7%);
+$light-mode-col-blur: hsl(0 0 0% / 0.2);
 
 $dark-secondary-col: hsl(272, 71%, 32%);
 $light-secondary-col: hsl(272, 71%, 32%);

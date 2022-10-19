@@ -36,9 +36,6 @@ function Header() {
                     <li>
                         <a href="#" className="nav__about">ABOUT</a>
                     </li>
-                    <li> 
-                        <a href="#" className="nav__skills">SKILLS</a>
-                    </li>
                     <li>
                         <a href="#" className="nav__projects">PROJECTS</a>
                     </li>
