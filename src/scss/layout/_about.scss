@@ -1,15 +1,16 @@
 .about {
-    padding: 40px;
-    &__wrapper {
-        padding-top: 50px;
-        display: flex;
-        justify-content: space-around;
-
-        &__educ, &__work {
-            display: flex;
-            flex-direction: column;
-
+    // height: calc(100vh - 62px);
+    padding-block: 2rem;
+    &--content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
         }
     }
+    &--info {
+        text-align: justify;
+    }
+    
 }
 

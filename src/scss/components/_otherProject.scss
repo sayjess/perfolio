@@ -1,25 +1,30 @@
 @use '../util/' as u;
 //move this to layout, move color to toggle
+
+.other-head{
+    margin-bottom: 0;
+}
 .container--small--proj{
     display: flex;
     gap: 20px;
-    background-color: u.$dark-secondary-col;
+    // background-color: u.$dark-secondary-col;
     border-radius: 20px;
     overflow-x: hidden;
-    margin-block: 50px;
-    padding: 0 30px 40px;
-    overflow-x: auto;
-    
-}
-.card{
-    background-color: u.$dark-mode-bg;
-    margin-top: 3em;
+    // margin-block: 50px;
+    // padding: 0 30px 40px;
+    padding-bottom: 40px;
+    padding-inline: 5px;
+    // overflow-x: auto;
+
+    .card{
+    background-color: u.$dark-mode-col-blur;
+    margin-top: 1.5em;
     width: 11em;
     height: 100%;   
     padding: 0;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 20px;
-    
+
     &--img {
         width: 176px;
         height: 176.3px;
@@ -29,7 +34,7 @@
         &--hidden {
             display: none;
         }
-    
+
         &--show{
             display:block;
         }
@@ -40,11 +45,11 @@
         font-size: 14px;
     }
 
-    
+
     &--secondary{
         height: 176.3px;
         width: 176px;
-    
+
         
         &--hidden {
             display: none;
@@ -60,8 +65,8 @@
             
         }
     }
-    
-    
+
+
     .btn {
         display: flex;
         background-color: none;
@@ -72,5 +77,6 @@
         font-size: .53em;
         text-align: center;
         padding-bottom: 20px;
+    }
     }
 }

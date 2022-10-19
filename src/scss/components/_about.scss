@@ -1,3 +1,24 @@
+@use '../util/' as u;
+
 .about {
-    height: calc(100vh - 62px);
+
+    .about--heading {
+        padding-top: 20px;
+    }
+
+    .techstack {
+    display: flex;
+    flex-direction: row;
+    padding-block: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    .fa-brands{
+        font-size: 4rem;
+        color: #868e96;
+        &:hover {
+            color: u.$light-secondary-col;
+        }
+    }
 }

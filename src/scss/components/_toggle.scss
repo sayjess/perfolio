@@ -42,7 +42,7 @@ body.light-mode {
   //GLOBAL VARIABLES
 
   
-  a, p, h2 {
+  a, p, h2, h3, h4 {
     color: u.$light-mode-col-el;
   }
   //HEADER
@@ -69,7 +69,7 @@ body.light-mode {
     nav {
       color: u.$light-mode-col-el;
       li:active {
-        background-color: hsl(0 0 0% / 0.2);
+        background-color: u.$light-mode-col-blur;
       }
     }
     &__contact {
@@ -95,6 +95,24 @@ body.light-mode {
     .text{
         color: u.$light-mode-col-el;
     }
+  }
+
+  //projects
+  //big projects
+  .btn-container {
+    .btn {
+      color: u.$light-secondary-col;
+      p {
+        color: u.$light-secondary-col;
+      }
+    }
+  }
+  //small projects
+  .container--small--projects{
+    .card--title{
+      color: u.$dark-mode-col-el;
+    }
+
   }
 
   //contact
@@ -131,7 +149,7 @@ body.dark-mode {
 
   nav {
     li:active{
-      background-color: hsl(0 0 100% / 0.02);
+      background-color: u.$dark-mode-col-blur;
     }
   }
   //HOME
