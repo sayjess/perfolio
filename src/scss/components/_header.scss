@@ -17,14 +17,14 @@ nav {
             transition: transform 350ms ease-in;
         }
     }
-    li {
+    .bar {
     position: relative;
         @media (max-width: 768px) {
             padding: min(5vh, 1rem);
             }
     }
 
-    li:before {
+    .bar:before {
         content: '';
         background: hsl(272, 71%, 32%);
         display: block;
@@ -36,24 +36,26 @@ nav {
         transition: all 0.3s ease-in;
         
     }
-    li:hover:before {
+    .bar:hover:before {
         width: 100%;
         transition: all 0.3s ease-out;
     }
 
 
-    li:hover {
+    .bar:hover {
         background-position: 0;
     }
-    li {
-        padding: 5px 15px 0px;
+    .bar {
+        padding: 10px 30px 0px;
     }
-    li:active {
+    .bar:active {
         border-radius: 5px 5px 0 0;
     }
 
-    // .active { 
-    //     border-radius: 5px 5px 0 0;
-    //     background-color: u.$dark-mode-col-blur;
-    // }
+    .active { 
+        border-radius: 5px 5px 0 0;
+        background-color: u.$dark-mode-col-blur;
+        border-bottom: 3px solid hsl(272, 71%, 32%);
+        border-bottom-width: 150%;
+    }
 }
