@@ -1,4 +1,3 @@
-import img from '../images/small-proj/interactive-rating-component.png'
 
 function BigProjectsCard(props) {
     return(

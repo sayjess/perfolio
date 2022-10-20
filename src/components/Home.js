@@ -20,7 +20,7 @@ function Home(){
         />
     }
     return(
-        <main className="home">
+        <main name="home" className="home">
             <div className="home__desc"> 
                 <h1 className="home__intro">
                     <div className="text">Hi, I'm Jess</div>

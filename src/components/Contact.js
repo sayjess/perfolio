@@ -39,7 +39,7 @@ const Contact = () => {
     };
 
   return (
-    <div className={`contact ${active}`}>
+    <div name='contact' className={`contact ${active}`}>
         <h2>Get In Touch</h2>
         <div className='container'>
           <div className='contact__initial flex'>
