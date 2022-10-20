@@ -6,19 +6,19 @@ import bigProj from '../containers/bigproj';
 function Projects(){
     const smallProjElement = smallProj.map(data => {
         return <CardSmallProj    
-        key={data.key} 
+        key={data.id} 
         data={data}
         />
       })
       const bigProjElement = bigProj.map(data => {
         return <CardBigProj    
-        key={data.key} 
+        key={data.id} 
         data={data}
         />
       })
 
     return(
-      <section className='projects'>
+      <section name='projects' className='projects'>
         <div className='big-proj'>
           <h2>PROJECTS</h2>
           <h3>BIG PROJECTS</h3>
@@ -28,11 +28,11 @@ function Projects(){
         </div>
         <div className='other-proj'>
           <h3 className='other-head'>OTHER PROJECTS</h3>
-          <i class="fa-solid fa-caret-left"></i>
+          <i className="fa-solid fa-caret-left"></i>
           <div className="container--small--proj">
             {smallProjElement}
           </div>
-          <i class="fa-solid fa-caret-right"></i>
+          <i className="fa-solid fa-caret-right"></i>
          </div>
       </section>
     )
