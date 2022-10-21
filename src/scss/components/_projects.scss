@@ -1,4 +1,4 @@
-
+@use '../util/' as u;
 .projects, .big-proj, .other-proj {
     padding-block: 32px;
 }
@@ -9,19 +9,6 @@
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     padding: 50px;
     border-radius: 30px;
-    position: relative;
-
-    .fa-caret-left, .fa-caret-right{
-        position: absolute;
-        font-size: 4rem;
-        top: 150px;
-    }
-
-    .fa-caret-left {
-        left: 15px;
-    }
-    .fa-caret-right {
-        right: 15px;
-    }
+    width: 100%;
 }
 

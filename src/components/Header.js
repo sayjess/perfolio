@@ -8,30 +8,6 @@ import { Link } from 'react-scroll'
 
 function Header() {
 
-    //SET BUTTON TO ACTIVE STYLING WHEN CLICKED
-    
-
-        function toggleButton(e) {
-            const li = document.querySelectorAll('li');
-            const a = document.querySelector('a');
-            const target = e.target;
-            console.log(target);
-
-            // console.log("remove")
-            // li.forEach(element => {
-            //     element.classList.remove('active');
-            //   });
-            // //set on target
-            // console.log("add")
-            // target.classList.add("active");
-            // a.forEach(element => {
-            //     element.classList.remove('active');
-            //   });
-
-        }
-
-
-
 
     const darkMode = useDarkMode(false);
     const [btn, setBtn] = React.useState(false);
@@ -56,20 +32,16 @@ function Header() {
                 </span>
             </button>
 
-            <nav className="nav">
-                <ul id="navigation" className={toggleSideBar}>
-                    <li>
-                        <Link className="nav__home" activeClass="active" to="home" spy={true} smooth={true} offset={-80} duration={500}>HOME</Link>
-                    </li>
-                    <li>
-                        <Link className="nav__about" activeClass="active" to="about" spy={true} smooth={true} offset={-70} duration={500}>ABOUT</Link>
-                    </li>
-                    <li>
-                        <Link className="nav__projects" activeClass="active" to="projects" spy={true} smooth={true} offset={-70} duration={500}>PROJECTS</Link>
-                    </li>
-                    <li>
-                        <Link className="nav__contact" activeClass="active" to="contact" spy={true} smooth={true} offset={-50} duration={500}>CONTACT</Link>
-                    </li>
+        <nav className="nav">
+            <ul id="navigation" className={toggleSideBar}>
+                
+                    <Link className="bar nav__home" activeClass="active" to="home" spy={true} smooth={true} offset={-80} duration={500}>HOME</Link>
+                
+                    <Link className="bar nav__about" activeClass="active" to="about" spy={true} smooth={true} offset={-70} duration={500}>ABOUT</Link>
+                
+                    <Link className="bar nav__projects" activeClass="active" to="projects" spy={true} smooth={true} offset={-70} duration={500}>PROJECTS</Link>
+                
+                    <Link className="bar nav__contact" activeClass="active" to="contact" spy={true} smooth={true} offset={-50} duration={500}>CONTACT</Link>  
                 </ul>
             </nav>
         </header>

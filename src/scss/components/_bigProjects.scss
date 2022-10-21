@@ -2,20 +2,18 @@
 
 .container--big--proj {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-items: center;
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+    grid-gap: 1rem 1rem;
+    gap: 1rem 1rem;
+
         
-    }
+        
     .card{
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: space-between;
         padding: 20px;
-        width: 30vw;
         @media (max-width: 768px) {
             width: 80vw;
             

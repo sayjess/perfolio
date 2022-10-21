@@ -28,4 +28,13 @@ export default [
         github: "https://github.com/sayjess/music-player",
         view: "https://sayjess.github.io/music-player/",
     },
+    {
+        id: 4,
+        name: "Music Player",
+        img: musicPlayer,
+        description: "Placeholder Text",
+        github: "https://github.com/sayjess/music-player",
+        view: "https://sayjess.github.io/music-player/",
+    },
+   
 ]
