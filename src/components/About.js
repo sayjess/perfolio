@@ -21,24 +21,19 @@ function About(){
                     </p>
                 </div>
                 <p className="about--info">
-                Hello, I am Jessa Marie Elardo. You can call me Jess for short! I am a Technical Architect by profession but a Front-end Developer by heart!
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis lectus nulla at volutpat.
                 <br></br>
                 <br></br>
-                I was always keen on having a career in Front-end Development and had already been taking online courses since pre-pandemic through DOST's free Coursera courses program. When the pandemic hit, I had to search for a job to support my family financially and had to stop my passion since then. Almost two years have passed ever since.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 <br></br>
                 <br></br>
-                In August of 2022, My passion in Front-end Development sparked again. Without a second though, I immediately bought ZTM's Web Development Course in Udemy. And it has taken me at this point looking back.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod quis viverra nibh cras pulvinar mattis nunc. Convallis aenean et tortor at risus viverra adipiscing at in.
                 <br></br>
                 <br></br>
-                I am excited by the thought that tomorrow, or in the coming days, I will finally be a Front-end Developer by profession!
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis lectus nulla at volutpat!
                 <br></br>
                 <br></br>
-                Fighting!
-                {/* Being an Urban Planner by profession, I ventured on a mission to search for solutions to make smarter and more resilient communities – an endless quest for technological innovations which eventually led me to the fascinating world of Web Development.
-
-                After all, the web is just an evolved form of the communities that we know. We connect, we communicate, we interact. Everything just turned digital.
-
-                Today, my mission still remains, but I am more focused now on developing beautifully designed websites and web applications that foster seamless and worthwhile digital community experiences. Hungry to further enhance my knowledge in this field, I am open to working in environments where I can learn, grow, and contribute more. */}
+                Lorem!
                 </p>
             </div>
         </div>

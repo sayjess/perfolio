@@ -19,6 +19,8 @@ nav {
     }
     .bar {
     position: relative;
+    padding: 10px 30px 0px;
+    cursor: pointer;
         @media (max-width: 768px) {
             padding: min(5vh, 1rem);
             }
@@ -44,9 +46,6 @@ nav {
 
     .bar:hover {
         background-position: 0;
-    }
-    .bar {
-        padding: 10px 30px 0px;
     }
     .bar:active {
         border-radius: 5px 5px 0 0;

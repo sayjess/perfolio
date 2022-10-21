@@ -14,7 +14,7 @@ function OtherProjectsCard(props){
 
     return(
         <section className="card" onMouseOver={hoverHandler} onMouseOut={handleMouseOut}> 
-            <img className={isHovering ? 'card--img card--img--hidden' : 'card--img card--img--show'} src={props.data.img} alt=""/>
+            <img className={isHovering ? 'card--img card--img--hidden' : 'card--img card--img--show'} src={ props.data.img} alt=""/>
             <div className={isHovering ?  'card--secondary card--secondary--show' : 'card--secondary card--secondary--hidden'}>
                 <p className='card--desc'>
                     {props.data.description}
