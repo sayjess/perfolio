@@ -45,7 +45,7 @@ function OtherProjectsCard(props){
                     <a 
                     href={props.data.github} 
                     className='btn btn--github'
-                    rel="noreferrer noopener" 
+                    rel="noreferrer" 
                     target="_blank"
                     >
                         <i className="fa-brands fa-github"></i>
@@ -53,7 +53,7 @@ function OtherProjectsCard(props){
                     <a 
                     href={props.data.view} 
                     className='btn btn--view' 
-                    rel="noreferrer noopener" 
+                    rel="noreferrer" 
                     target="_blank"
                     >
                         <i className="fa-solid fa-eye"></i>

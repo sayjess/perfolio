@@ -22,7 +22,7 @@ function BigProjectsCard(props) {
                 <a 
                 href={props.data.github} 
                 className='btn btn--github' 
-                rel="noreferrer noopener" target="_blank"
+                rel="noreferrer" target="_blank"
                 >
                     <p>
                         SOURCE CODE
@@ -32,7 +32,7 @@ function BigProjectsCard(props) {
                 <a 
                 href={props.data.view} 
                 className='btn btn--view' 
-                rel="noreferrer noopener" 
+                rel="noreferrer" 
                 target="_blank"
                 >
                     <p>
