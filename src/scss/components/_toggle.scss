@@ -15,7 +15,7 @@ input[type='checkbox'].dmcheck {
 
   //set background color dark mode
   &:checked + label {
-    left: 17px;
+    left: 37px;
     background-color: u.$dark-mode-bg;
   }
 
@@ -28,7 +28,7 @@ input[type='checkbox'].dmcheck {
     transition: all 0.3s ease;
     cursor: pointer;
     position: absolute;
-    left: 4px;
+    left: 24px;
     background-color: u.$light-mode-bg;
     border: 2px solid u.$dark-secondary-col;
   }
@@ -61,6 +61,16 @@ body.light-mode {
   .hamburger-inner {
     &, &::before, &::after{
       background-color: u.$light-mode-col-el;
+    }
+  }
+
+  nav {
+    .bar:active{
+      background-color: u.$light-mode-col-blur;
+    }
+
+    .active {
+      background-color: u.$light-mode-col-blur;
     }
   }
   .header{
@@ -115,6 +125,16 @@ body.light-mode {
 
   }
 
+  //about
+  .about {
+    .icon-container {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+    .icon {
+      color: #9b4ddf;
+    }
+  }
+
   //contact
   .thank-you{
     color: u.$light-secondary-col;
@@ -148,7 +168,10 @@ body.dark-mode {
   }
 
   nav {
-    li:active{
+    .bar:active{
+      background-color: u.$dark-mode-col-blur;
+    }
+    .active {
       background-color: u.$dark-mode-col-blur;
     }
   }
@@ -161,6 +184,16 @@ body.dark-mode {
     }
     &__contact {
       border: 2px solid u.$dark-secondary-col;
+    }
+  }
+
+  //about
+  .about {
+    .icon-container {
+      box-shadow: rgba(241, 227, 227, 0.055) 0px 1px 4px;
+    }
+    .icon {
+      color: #9b4ddf;
     }
   }
 }

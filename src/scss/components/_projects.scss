@@ -1,6 +1,11 @@
 @use '../util/' as u;
-.projects, .big-proj, .other-proj {
+.projects, .other-proj {
     padding-block: 32px;
+    
+}
+
+.projects {
+    padding-inline: 30px;
 }
 
 .other-proj {
@@ -10,5 +15,9 @@
     padding: 50px;
     border-radius: 30px;
     width: 100%;
+    @media (max-width: 900px) {
+        padding: 20px;
+    }
+    
 }
 

@@ -6,25 +6,26 @@ import contact from '../images/design/contact.svg'
 const Contact = () => {
     //modal
     const [modal, setModal] = React.useState(false);
-    const toggleModal = () => {
-      setModal(() => {
-        setModal(false)
-      })
+
+    function toggleModal () {
+      setModal(newVal => !newVal)
     }
-     
-    const active = modal ? 'active-modal' : 'active-modal';
+
     const modalToggle = modal ? 'modal modal-on' : 'modal modal-off';
 
-    //emailjs
+    // https://www.emailjs.com/
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
         console.log(modal)
-        emailjs.sendForm('service_se0gp3t', 'template_aq14twk', form.current, 'MBIa8Sh7M4UFjETFw')
+        emailjs.sendForm(
+          'service_se0gp3t', 
+          'template_aq14twk', 
+          form.current, 
+          'MBIa8Sh7M4UFjETFw')
         .then((result) => {
-          // console.log(result.text);
-        
-          //set modal upon sending email
+          console.log(result.text);
+          //set modal to true upon sending email
           setModal(true);
           //set Modal state to false after 5 seconds
           setTimeout(() => {
@@ -39,7 +40,7 @@ const Contact = () => {
     };
 
   return (
-    <div name='contact' className={`contact ${active}`}>
+    <div className="contact">
         <h2>Get In Touch</h2>
         <div className='container'>
           <div className='contact__initial flex'>
@@ -78,12 +79,14 @@ const Contact = () => {
           <div className='contact__img'>
             <img className='contact__hero' src={contact} alt=""/>
           </div>
-          <div className={modalToggle }>
+          {/*MESSAGE SENT ELEMENT TOGGLES TO TRUE WHEN FORM HAS BEEN SUBMITTED */}
+          <div className={modalToggle}>
               <div className="modal-content">
                 <div className='modal-cntnt-first'>
                   <i className="fa-solid fa-circle-check"></i>
                   <h2>Message Sent</h2>
                 </div>
+                {/* POP UP DISAPPEARS WHEN X IS CLICKED */}
                 <a href="#" className="close-modal" onClick={toggleModal}>
                   <i className="fa-solid fa-xmark" onClick={toggleModal}></i>
                 </a>

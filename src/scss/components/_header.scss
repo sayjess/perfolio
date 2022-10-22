@@ -4,15 +4,19 @@
     gap: min(5vh, 2rem);
 }
 
+.toggle-control {
+    padding-left: 20px;
+}
+
 nav {
     .off {
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
             transform: translateX(100%);
             transition: transform 350ms ease-in;
         }
     }
     .on {
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
             transform: translateX(0%);
             transition: transform 350ms ease-in;
         }
@@ -21,11 +25,10 @@ nav {
     position: relative;
     padding: 10px 30px 0px;
     cursor: pointer;
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
             padding: min(5vh, 1rem);
             }
     }
-
     .bar:before {
         content: '';
         background: hsl(272, 71%, 32%);
@@ -42,18 +45,14 @@ nav {
         width: 100%;
         transition: all 0.3s ease-out;
     }
-
-
     .bar:hover {
         background-position: 0;
     }
     .bar:active {
         border-radius: 5px 5px 0 0;
     }
-
     .active { 
         border-radius: 5px 5px 0 0;
-        background-color: u.$dark-mode-col-blur;
         border-bottom: 3px solid hsl(272, 71%, 32%);
         border-bottom-width: 150%;
     }

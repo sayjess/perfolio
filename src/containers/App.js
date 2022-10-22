@@ -5,24 +5,21 @@ import About from "../components/About";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Projects from "../components/Projects";
-import 'animate.css';
 
 
 
 
 function App() {
-  
-
   return (
     <div>  
         <Header />
-        <Home />
+        <Home name='home'/>
         <hr></hr>
-        <About />
+        <About name='about'/>
         <hr></hr>
-        <Projects />
+        <Projects name='projects'/>
         <hr></hr>
-        <Contact />
+        <Contact name='contact'/>
         <hr></hr>
         <Footer />
         <hr></hr>

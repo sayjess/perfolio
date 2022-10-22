@@ -7,7 +7,7 @@ import "react-multi-carousel/lib/styles.css";
 
 function Projects(){
 
-  //multi-carousel library
+  //https://www.npmjs.com/package/react-multi-carousel
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -28,13 +28,14 @@ function Projects(){
     }
   };
 
-
+  //src\containers\smallproj.js
   const smallProjElement = smallProj.map(data => {
       return <CardSmallProj    
       key={data.id} 
       data={data}
       />
     })
+    // src\containers\bigproj.js
     const bigProjElement = bigProj.map(data => {
       return <CardBigProj    
       key={data.id} 
@@ -43,7 +44,7 @@ function Projects(){
     })
 
   return(
-    <section name='projects' className='projects'>
+    <section className='projects'>
       <div className='big-proj'>
         <h2>PROJECTS</h2>
         <h3>BIG PROJECTS</h3>
@@ -53,21 +54,18 @@ function Projects(){
       </div>
       <div className='other-proj'>
         <h3 className='other-head'>OTHER PROJECTS</h3>
-        {/* <i className="fa-solid fa-caret-left"></i> */}
         <Carousel 
         swipeable={true}  
         keyBoardControl={true} 
         responsive={responsive} containerClass="carousel-container" 
         draggable={true}
-        showDots={false}
-        ssr={true} // means to render carousel on server-side.
-        infinite={true}
+        showDots={true}
+        infinite={false}
         autoPlay={true}
         removeArrowOnDeviceType={["tablet", "mobile"]}
         itemClass="carousel-item-padding-40-px">
             {smallProjElement}
         </Carousel>
-        {/* <i className="fa-solid fa-caret-right"></i> */}
         </div>
     </section>
   )
