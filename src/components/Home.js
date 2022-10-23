@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import Typewriter from 'typewriter-effect';
-import home from "../images/design/home.svg" ;
+import resume from "../containers/resume.pdf" ;
 
 
 function Home(){
@@ -38,7 +38,7 @@ function Home(){
                     className="home__btn"
                     >
                     <a 
-                        href={home} className="home__download" download
+                        href={resume} className="home__download" download
                         >
                         RESUME 
                             <i 
