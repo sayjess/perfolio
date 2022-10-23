@@ -22,7 +22,7 @@ function Home(){
     }
     
     //if user in mobile contact via mobile phone else contact via email
-    const contactBtn = window.innerWidth > 427 ? "tel: 09271971915" : "mailto: elardojessj@gmail.com";
+    const contactBtn = window.innerWidth < 427 ? "tel: 09271971915" : "mailto: elardojessj@gmail.com";
     
     return(
         <main className="home">
