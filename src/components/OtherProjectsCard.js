@@ -7,7 +7,6 @@ function OtherProjectsCard(props){
     //STATE IS SET TO TRUE WHEN CURSOR HOVERS OUTSIDE CARD ELEMENT
     const hoverHandler = () => {
         setIsHovering(prevVal => !prevVal)
-        console.log(isHovering)
         }
     //STATE IS SET TO FALSE WHEN CURSOR HOVERS OUTSIDE CARD ELEMENT
     const handleMouseOut = () => {
