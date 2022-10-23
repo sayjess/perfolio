@@ -21,6 +21,9 @@ function Home(){
         />
     }
     
+    //if user in mobile contact via mobile phone else contact via email
+    const contactBtn = window.innerWidth > 427 ? "tel: 09271971915" : "mailto: elardojessj@gmail.com";
+    
     return(
         <main className="home">
             <div className="home__desc"> 
@@ -43,7 +46,7 @@ function Home(){
                             ></i>
                     </a>
                     <a 
-                        href="tel: #"
+                        href={contactBtn}
                         className="home__contact"
                         >CONTACT 
                         <i 

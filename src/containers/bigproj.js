@@ -1,6 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
 import perfolio from '../images/big-proj/perfolio.png'
-import sunnyside from '../images/small-proj/sunnyside.jpg'
 
 export default [
     {

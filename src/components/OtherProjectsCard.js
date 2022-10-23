@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import img from '../images/small-proj/interactive-rating-component.png'
 import React from 'react'
 
 function OtherProjectsCard(props){
@@ -68,5 +67,4 @@ function OtherProjectsCard(props){
         </section>
     )
 }
-
 export default OtherProjectsCard;
