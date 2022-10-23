@@ -18,11 +18,7 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
         console.log(modal)
-        emailjs.sendForm(
-          'service_se0gp3t', 
-          'template_aq14twk', 
-          form.current, 
-          'MBIa8Sh7M4UFjETFw')
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
         .then((result) => {
           console.log(result.text);
           //set modal to true upon sending email
