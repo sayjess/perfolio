@@ -47,7 +47,7 @@ function Projects(){
     <section className='projects'>
       <div className='big-proj'>
         <h2>PROJECTS</h2>
-        <h3>BIG PROJECTS</h3>
+        <h3>HIGHLIGHTS</h3>
         <div className="container--big--proj">
           {bigProjElement}
         </div>
