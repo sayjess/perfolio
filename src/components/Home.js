@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import Typewriter from 'typewriter-effect';
+import home from "../images/design/home.svg" ;
 import resume from "../containers/resume.pdf" ;
 
 
