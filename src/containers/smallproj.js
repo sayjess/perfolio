@@ -16,7 +16,7 @@ export default [
     {
         id: 2,
         name: "Shopping List",
-        img: "http://store-images.s-microsoft.com/image/apps.44371.13666304476033749.c460fe0e-c4e9-44c5-84b7-b6f879b0e450.de5ecc24-e13b-4cfe-aa43-f2b4465122fe",
+        img: "https://store-images.s-microsoft.com/image/apps.44371.13666304476033749.c460fe0e-c4e9-44c5-84b7-b6f879b0e450.de5ecc24-e13b-4cfe-aa43-f2b4465122fe",
         description: "A simple shopping list website that uses DOM Manipulation and Event Listeners to add and/or remove items from the list.",
         github: "https://github.com/sayjess/shoplist.github.io",
         view: "https://sayjess.github.io/shoplist.github.io/",
