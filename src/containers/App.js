@@ -11,7 +11,7 @@ import Projects from "../components/Projects";
 
 function App() {
   return (
-    <div>  
+    <>  
         <Header />
         <Home name='home'/>
         <hr></hr>
@@ -23,7 +23,7 @@ function App() {
         <hr></hr>
         <Footer />
         <hr></hr>
-    </div>
+    </>
   )
 }
 
