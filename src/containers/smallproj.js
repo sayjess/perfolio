@@ -3,6 +3,7 @@ import rating from '../images/small-proj/rating.jpg'
 import sunnyside from '../images/small-proj/sunnyside.jpg'
 import musicPlayer from '../images/small-proj/music-player.png'
 import robofriends from '../images/small-proj/robofriends.jpg'
+import calculator from "../images/small-proj/calculator.png"
 
 export default [
     {
@@ -52,6 +53,14 @@ export default [
         description: "Made mainly using vanilla Javascript. This music player allows you to play/pause song. Or play the previous/next song available in the playlist.",
         github: "https://github.com/sayjess/music-player",
         view: "https://sayjess.github.io/music-player/",
+    },
+    {
+        id: 7,
+        name: "Calculator",
+        img: calculator,
+        description: "A calculator with basic operations made using HTML, CSS and Vanilla JS.",
+        github: "https://github.com/sayjess/calculator",
+        view: "https://sayjess.github.io/calculator/",
     },
    
 ]

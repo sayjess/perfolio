@@ -6,13 +6,14 @@ import contact from '../images/design/contact.svg'
 const Contact = () => {
     //modal
     const [modal, setModal] = React.useState(false);
-
+    //toggle modal state
     function toggleModal () {
       setModal(newVal => !newVal)
     }
-
+    //set classname based on modal state
     const modalToggle = modal ? 'modal modal-on' : 'modal modal-off';
 
+    //email sender
     // https://www.emailjs.com/
     const form = useRef();
     const sendEmail = (e) => {
