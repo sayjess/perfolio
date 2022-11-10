@@ -9,21 +9,15 @@ export default [
         description: "Software Developer Portfolio Template that helps you showcase your work and skills as a software developer.",
         github: "https://github.com/sayjess/perfolio",
         view: "https://lorem-perfoliobyjess.netlify.app/",
+        inProgress: true
     },
-    // {
-    //     id: 2,
-    //     name: "ILLUMINATE",
-    //     img: "https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80",
-    //     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    //     github: "#",
-    //     view: "#",
-    // },
-    // {
-    //     id: 3,
-    //     name: "BARE",
-    //     img: "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-    //     description: "Imperdiet sed euismod nisi porta lorem.",
-    //     github: "#",
-    //     view: "#",
-    // },
+    {
+        id: 2,
+        name: "MASKINE",
+        img: "https://cdn.analyticsvidhya.com/wp-content/uploads/2020/09/10-incredible-open-source-computer-vision-projects-for-beginner.jpg",
+        description: "Face Recognition app made with Clarifai API",
+        github: "https://github.com/sayjess/maskine",
+        view: "https://maskine.netlify.app/",
+        inProgress: false,
+    }
 ]

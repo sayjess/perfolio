@@ -2,6 +2,9 @@
 function BigProjectsCard(props) {
     return(
         <div className="card">
+            {!props.data.inProgress && <p className="status">
+                IN PROGRESS
+            </p>}
             <div>
                 <img 
                 src={props.data.img} 
