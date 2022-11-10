@@ -2,7 +2,6 @@
 
 .container--big--proj { 
     .card{
-        position: relative;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -16,11 +15,78 @@
         .status {
             position: absolute;
             margin: 10px 0 0 10px;
-            background-color: #F4E06D;
-            color: black;
+            background-color: #b2afff3e;
+            color: white;
             padding: 5px;
             border-radius: 5px;
         }
+        .card-content{
+            position: relative;
+            
+        }
+        .tech-used {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            // bottom: 15px;
+            bottom: 0;
+            padding: 5px;
+            border-radius: 50px;
+
+        }
+        .tech, .gear{
+            background-color: #B1AFFF;
+            width: 2rem;
+            border-radius: 50%;
+            aspect-ratio: 1 / 1;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 5px;
+            position: relative;
+        }
+        .techs {
+            position: relative;
+            width: 100%;
+            transform: translateY(-100%);
+            transition: transform 350ms ease-in;
+        }
+
+        .gear {
+            position: absolute;
+            transition: all 350ms;
+            z-index: 3;
+            right: 0;
+
+        }
+        
+        .gear:hover {
+            transform: rotate(180deg);
+            
+        }
+
+        .tech-wrapper {
+            position: absolute;
+            height: 100%;
+            right: 0;
+            overflow: hidden;
+            top: 30px;
+            z-index: 2;
+            
+        }
+        .on{
+            transform: translateY(0%);
+            transition: transform 350ms ease-in;
+            padding-top: 13px;
+        }  
+        .off {
+            transform: translateY(-100%);
+            transition: transform 350ms ease-in;
+        }
+        
+
         img {
             border-radius: 20px;
             width: 100%;

@@ -1,4 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
+import React from 'react'
 import perfolio from '../images/big-proj/perfolio.png'
 
 export default [
@@ -9,7 +10,12 @@ export default [
         description: "Software Developer Portfolio Template that helps you showcase your work and skills as a software developer.",
         github: "https://github.com/sayjess/perfolio",
         view: "https://lorem-perfoliobyjess.netlify.app/",
-        inProgress: true
+        inProgress: true,
+        techUsed: [
+            <i className="tech fa-brands fa-react"></i>, 
+            <i className="tech fa-brands fa-sass"></i>,
+            <i className="tech fa-brands fa-html5"></i>
+        ]
     },
     {
         id: 2,
@@ -19,5 +25,10 @@ export default [
         github: "https://github.com/sayjess/maskine",
         view: "https://maskine.netlify.app/",
         inProgress: false,
+        techUsed: [
+            <i className="tech fa-brands fa-react"></i>, 
+            <i className="tech fa-brands fa-css3-alt"></i>,
+            <i className="tech fa-brands fa-node"></i>
+        ]
     }
 ]
