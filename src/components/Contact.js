@@ -57,10 +57,10 @@ const Contact = () => {
               <a href="https://www.instagram.com/" title="">
                 <i className="fa-brands fa-instagram"></i>
               </a>
-              <a href="https://www.linkedin.com/" title="">
+              <a href="https://www.linkedin.com/in/elardojessj/" title="">
                 <i className="fa-brands fa-linkedin"></i>
               </a>
-              <a href="https://github.com/" title="">
+              <a href="https://github.com/sayjess" title="">
                 <i className="fa-brands fa-github"></i>
               </a>
             </p>
