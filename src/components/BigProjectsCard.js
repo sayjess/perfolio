@@ -7,6 +7,7 @@ function BigProjectsCard(props) {
         onhoverGear(newVal => !newVal)
     }
     const gear = hoverGear ? 'techs on' : 'techs off';
+    const gearClick = hoverGear ? 'fa-solid fa-gear gear gearClick' : "fa-solid fa-gear gear gearClickOut";
 
     return(
         <div className="card">
@@ -21,7 +22,7 @@ function BigProjectsCard(props) {
                     alt=""
                     />
                     <div className="tech-used">
-                            <i className="fa-solid fa-gear gear" onMouseEnter={onHoverGear} onMouseLeave={onHoverGear}>
+                            <i className={gearClick} onMouseEnter={onHoverGear} onMouseLeave={onHoverGear} onClick={onHoverGear}>
                             </i>
                         <div className="tech-wrapper">
                             <div className={gear}>

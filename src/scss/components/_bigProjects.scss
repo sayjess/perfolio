@@ -61,8 +61,13 @@
             right: 0;
 
         }
+
+        .gearClickOut {
+            transform: rotate(-180deg);
+        }
         
-        .gear:hover {
+        
+        .gear:hover .gearClick {
             transform: rotate(180deg);
             
         }
@@ -79,7 +84,7 @@
         .on{
             transform: translateY(0%);
             transition: transform 350ms ease-in;
-            padding-top: 13px;
+            padding-top: 12px;
         }  
         .off {
             transform: translateY(-100%);
