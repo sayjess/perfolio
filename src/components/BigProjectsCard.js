@@ -1,10 +1,12 @@
+import { hover } from "@testing-library/user-event/dist/hover";
 import React from "react";
 function BigProjectsCard(props) {
     const { name, img, description, github, view, inProgress, techUsed } = props.data;
     const [hoverGear, onhoverGear] = React.useState(false);
 
     function onHoverGear () {
-        onhoverGear(newVal => !newVal)
+        onhoverGear(!hoverGear)
+        console.log(hoverGear)
     }
     const gear = hoverGear ? 'techs on' : 'techs off';
     const gearClick = hoverGear ? 'fa-solid fa-gear gear gearClick' : "fa-solid fa-gear gear gearClickOut";
