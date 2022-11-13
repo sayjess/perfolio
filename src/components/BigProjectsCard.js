@@ -19,7 +19,7 @@ function BigProjectsCard(props) {
         <div className="card">
             <div>
                 <div className="card-content">
-                    {!inProgress && 
+                    {inProgress && 
                     <p className="status">
                     IN PROGRESS
                     </p>}
