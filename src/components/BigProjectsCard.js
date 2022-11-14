@@ -1,16 +1,19 @@
-import { hover } from "@testing-library/user-event/dist/hover";
 import React from "react";
 function BigProjectsCard(props) {
     const { name, img, description, github, view, inProgress, techUsed } = props.data;
     let [hoverGear, onHoverGear] = React.useState(false);
     console.log(hoverGear)
 
-    function inHoverGear () {
+    function alternateHover () {
         onHoverGear(newVal => !newVal)
     }
 
     const outHoverGear = () => {
         onHoverGear(newVal => newVal = false)
+    }
+
+    const inHoverGear = () => {
+        onHoverGear(newVal => newVal = true)
     }
     const gear = hoverGear ? 'techs on' : 'techs off';
     const gearClick = hoverGear ? 'fa-solid fa-gear gear gearClick' : "fa-solid fa-gear gear gearClickOut";
@@ -28,7 +31,7 @@ function BigProjectsCard(props) {
                     alt=""
                     />
                     <div className="tech-used">
-                            <i className={gearClick} onMouseEnter={inHoverGear} onMouseLeave={outHoverGear} onClick={inHoverGear}>
+                            <i className={gearClick} onMouseEnter={inHoverGear} onMouseLeave={outHoverGear} onClick={alternateHover}>
                             </i>
                         <div className="tech-wrapper">
                             <div className={gear}>
