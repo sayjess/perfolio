@@ -2,6 +2,7 @@
 import React from "react";
 import Typewriter from 'typewriter-effect';
 import home from "../images/design/home.svg" ;
+import resume from "../containers/resume.pdf" ;
 
 
 function Home(){
@@ -21,6 +22,9 @@ function Home(){
         />
     }
     
+    //if user in mobile contact via mobile phone else contact via email
+    const contactBtn = window.innerWidth < 427 ? "tel: 09271971915" : "mailto: elardojessj@gmail.com";
+    
     return(
         <main className="home">
             <div className="home__desc"> 
@@ -35,7 +39,7 @@ function Home(){
                     className="home__btn"
                     >
                     <a 
-                        href={home} className="home__download" download
+                        href={resume} className="home__download" download
                         >
                         RESUME 
                             <i 
@@ -43,7 +47,7 @@ function Home(){
                             ></i>
                     </a>
                     <a 
-                        href="tel: #"
+                        href={contactBtn}
                         className="home__contact"
                         >CONTACT 
                         <i 

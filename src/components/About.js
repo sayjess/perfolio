@@ -7,7 +7,7 @@ import Icon from "./Icon";
 function About(){
     const icons = icon.map(data => {
         return <Icon    
-            id={data.id} 
+            key={data.id} 
             data={data}
         />
       })
@@ -26,11 +26,11 @@ function About(){
                 className="about--tech"
                 >
                     <h3>My Techstack</h3>
-                    <p 
+                    <div 
                     className='techstack flex'
                     >
                         {icons}
-                    </p>
+                    </div>
                 </div>
                 <p 
                 className="about--info"

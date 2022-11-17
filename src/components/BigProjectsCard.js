@@ -1,26 +1,59 @@
-
+import React from "react";
 function BigProjectsCard(props) {
+    const { name, img, description, github, view, inProgress, techUsed } = props.data;
+    let [hoverGear, onHoverGear] = React.useState(false);
+    console.log(hoverGear)
+
+    function alternateHover () {
+        onHoverGear(newVal => !newVal)
+    }
+
+    const outHoverGear = () => {
+        onHoverGear(newVal => newVal = false)
+    }
+
+    const inHoverGear = () => {
+        onHoverGear(newVal => newVal = true)
+    }
+    const gear = hoverGear ? 'techs on' : 'techs off';
+    const gearClick = hoverGear ? 'fa-solid fa-gear gear gearClick' : "fa-solid fa-gear gear gearClickOut";
+
     return(
         <div className="card">
             <div>
-                <img 
-                src={props.data.img} 
-                alt=""
-                />
+                <div className="card-content">
+                    {inProgress && 
+                    <p className="status">
+                    IN PROGRESS
+                    </p>}
+                    <img 
+                    src={img} 
+                    alt=""
+                    />
+                    <div className="tech-used">
+                            <i className={gearClick} onMouseEnter={inHoverGear} onMouseLeave={outHoverGear} onClick={alternateHover}>
+                            </i>
+                        <div className="tech-wrapper">
+                            <div className={gear}>
+                                {techUsed}
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <h2>
-                    {props.data.name}
+                    {name}
                 </h2>
             </div>
                 <p 
                 className='card-desc'
                 >
-                    {props.data.description}
+                    {description}
                 </p> 
             <div 
             className='btn-container'
             >
                 <a 
-                href={props.data.github} 
+                href={github} 
                 className='btn btn--github' 
                 rel="noreferrer" target="_blank"
                 >
@@ -30,7 +63,7 @@ function BigProjectsCard(props) {
                     <i className="fa-brands fa-github"></i>
                 </a>
                 <a 
-                href={props.data.view} 
+                href={view} 
                 className='btn btn--view' 
                 rel="noreferrer" 
                 target="_blank"

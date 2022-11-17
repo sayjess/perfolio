@@ -1,16 +1,97 @@
 @use '../util/' as u;
 
-.container--big--proj {    
+.container--big--proj { 
     .card{
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: space-between;
         padding: 20px;
+        width: 100%;
         &:hover{
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             border-radius: 20px;
         }
+        .status {
+            position: absolute;
+            margin: 10px 0 0 10px;
+            background-color: #b2afff3e;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .card-content{
+            position: relative;
+            
+        }
+        .tech-used {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            // bottom: 15px;
+            bottom: 0;
+            padding: 5px;
+            border-radius: 50px;
+
+        }
+        .tech, .gear{
+            background-color: #B1AFFF;
+            width: 2rem;
+            border-radius: 50%;
+            aspect-ratio: 1 / 1;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 5px;
+            position: relative;
+        }
+        .techs {
+            position: relative;
+            width: 100%;
+            transform: translateY(-100%);
+            transition: transform 350ms ease-in;
+        }
+
+        .gear {
+            position: absolute;
+            transition: all 350ms;
+            z-index: 3;
+            right: 0;
+
+        }
+
+        .gearClickOut {
+            transform: rotate(-180deg);
+        }
+        
+        
+        .gear:hover .gearClick {
+            transform: rotate(180deg);
+            
+        }
+
+        .tech-wrapper {
+            position: absolute;
+            height: 100%;
+            right: 0;
+            overflow: hidden;
+            top: 30px;
+            z-index: 2;
+            
+        }
+        .on{
+            transform: translateY(0%);
+            transition: transform 350ms ease-in;
+            padding-top: 12px;
+        }  
+        .off {
+            transform: translateY(-100%);
+            transition: transform 350ms ease-in;
+        }
+        
+
         img {
             border-radius: 20px;
             width: 100%;

@@ -1,30 +1,49 @@
 /* eslint-disable import/no-anonymous-default-export */
+import React from 'react'
 import perfolio from '../images/big-proj/perfolio.png'
-import sunnyside from '../images/small-proj/sunnyside.jpg'
+import meme from '../images/big-proj/meme.png'
+import maskine from "../images/big-proj/maskine.jpeg"
 
 export default [
     {
         id: 1,
-        name: "PIGMENT",
-        img: "https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+        name: "PERFOLIO",
+        img: perfolio,
         description: "Software Developer Portfolio Template that helps you showcase your work and skills as a software developer.",
-        github: "#",
-        view: "#",
+        github: "https://github.com/sayjess/perfolio",
+        view: "https://lorem-perfoliobyjess.netlify.app/",
+        inProgress: false,
+        techUsed: [
+            <i className="tech fa-brands fa-react"></i>, 
+            <i className="tech fa-brands fa-sass"></i>,
+            <i className="tech fa-brands fa-html5"></i>
+        ]
     },
     {
         id: 2,
-        name: "ILLUMINATE",
-        img: "https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        github: "#",
-        view: "#",
+        name: "MASKINE",
+        img: maskine,
+        description: "Face Recognition app made with Clarifai API",
+        github: "https://github.com/sayjess/maskine",
+        view: "https://maskine.netlify.app/",
+        inProgress: true,
+        techUsed: [
+            <i className="tech fa-brands fa-react"></i>, 
+            <i className="tech fa-brands fa-css3-alt"></i>,
+            <i className="tech fa-brands fa-node"></i>
+        ]
     },
     {
-        id: 3,
-        name: "BARE",
-        img: "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-        description: "Imperdiet sed euismod nisi porta lorem.",
-        github: "#",
-        view: "#",
-    },
+        id: 2,
+        name: "MEME GENERATOR",
+        img: meme,
+        description: "",
+        github: "https://github.com/sayjess/meme-generator",
+        view: "https://memegeneratorbyjess.netlify.app/",
+        inProgress: false,
+        techUsed: [
+            <i className="tech fa-brands fa-react"></i>, 
+            <i className="tech fa-brands fa-css3-alt"></i>
+        ]
+    }
 ]

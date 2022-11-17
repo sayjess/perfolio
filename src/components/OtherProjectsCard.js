@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import img from '../images/small-proj/interactive-rating-component.png'
 import React from 'react'
 
 function OtherProjectsCard(props){
@@ -8,7 +7,6 @@ function OtherProjectsCard(props){
     //STATE IS SET TO TRUE WHEN CURSOR HOVERS OUTSIDE CARD ELEMENT
     const hoverHandler = () => {
         setIsHovering(prevVal => !prevVal)
-        console.log(isHovering)
         }
     //STATE IS SET TO FALSE WHEN CURSOR HOVERS OUTSIDE CARD ELEMENT
     const handleMouseOut = () => {
@@ -68,5 +66,4 @@ function OtherProjectsCard(props){
         </section>
     )
 }
-
 export default OtherProjectsCard;
