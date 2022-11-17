@@ -2,6 +2,7 @@
 import React from 'react'
 import perfolio from '../images/big-proj/perfolio.png'
 import meme from '../images/big-proj/meme.png'
+import maskine from "../images/big-proj/maskine.jpeg"
 
 export default [
     {
@@ -21,7 +22,7 @@ export default [
     {
         id: 2,
         name: "MASKINE",
-        img: "https://cdn.analyticsvidhya.com/wp-content/uploads/2020/09/10-incredible-open-source-computer-vision-projects-for-beginner.jpg",
+        img: maskine,
         description: "Face Recognition app made with Clarifai API",
         github: "https://github.com/sayjess/maskine",
         view: "https://maskine.netlify.app/",
