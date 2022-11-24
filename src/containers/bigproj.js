@@ -14,9 +14,18 @@ export default [
         view: "https://lorem-perfoliobyjess.netlify.app/",
         inProgress: false,
         techUsed: [
-            <i className="tech fa-brands fa-react"></i>, 
-            <i className="tech fa-brands fa-sass"></i>,
-            <i className="tech fa-brands fa-html5"></i>
+            {
+                id: 1,
+                name: "tech fa-brands fa-react"
+            },
+            {
+                id: 2,
+                name: "tech fa-brands fa-sass"
+            },
+            {
+                id: 3,
+                name: "tech fa-brands fa-html5"
+            }
         ]
     },
     {
@@ -28,13 +37,22 @@ export default [
         view: "https://maskine.netlify.app/",
         inProgress: true,
         techUsed: [
-            <i className="tech fa-brands fa-react"></i>, 
-            <i className="tech fa-brands fa-css3-alt"></i>,
-            <i className="tech fa-brands fa-node"></i>
+            {
+                id: 1,
+                name: "tech fa-brands fa-react"
+            },
+            {
+                id: 2,
+                name: "tech fa-brands fa-css3-alt"
+            },
+            {
+                id: 3,
+                name: "tech fa-brands fa-node"
+            }
         ]
     },
     {
-        id: 2,
+        id: 3,
         name: "MEME GENERATOR",
         img: meme,
         description: "",
@@ -42,8 +60,14 @@ export default [
         view: "https://memegeneratorbyjess.netlify.app/",
         inProgress: false,
         techUsed: [
-            <i className="tech fa-brands fa-react"></i>, 
-            <i className="tech fa-brands fa-css3-alt"></i>
+            {
+                id: 1,
+                name: "tech fa-brands fa-react"
+            },
+            {
+                id: 2,
+                name: "tech fa-brands fa-css3-alt"
+            },
         ]
     }
 ]

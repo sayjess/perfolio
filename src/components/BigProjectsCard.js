@@ -35,7 +35,14 @@ function BigProjectsCard(props) {
                             </i>
                         <div className="tech-wrapper">
                             <div className={gear}>
-                                {techUsed}
+                            {
+                                techUsed.map((tech) => {
+                                    return (
+                                        
+                                        <i className={tech.name} key={tech.id}></i>
+                                    )
+                            })
+                            }
                             </div>
                         </div>
                     </div>
