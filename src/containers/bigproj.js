@@ -10,6 +10,16 @@ export default [
         description: "Software Developer Portfolio Template that helps you showcase your work and skills as a software developer.",
         github: "#",
         view: "#",
+        techUsed: [
+            {
+                id: 1,
+                name: "tech fa-brands fa-react"
+            },
+            {
+                id: 2,
+                name: "tech fa-brands fa-css3-alt"
+            },
+        ]
     },
     {
         id: 2,
@@ -18,6 +28,16 @@ export default [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         github: "#",
         view: "#",
+        techUsed: [
+            {
+                id: 1,
+                name: "tech fa-brands fa-react"
+            },
+            {
+                id: 2,
+                name: "tech fa-brands fa-css3-alt"
+            },
+        ]
     },
     {
         id: 3,
@@ -26,5 +46,15 @@ export default [
         description: "Imperdiet sed euismod nisi porta lorem.",
         github: "#",
         view: "#",
+        techUsed: [
+            {
+                id: 1,
+                name: "tech fa-brands fa-react"
+            },
+            {
+                id: 2,
+                name: "tech fa-brands fa-css3-alt"
+            },
+        ]
     },
 ]
