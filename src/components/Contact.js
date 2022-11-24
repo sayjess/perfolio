@@ -17,14 +17,12 @@ const Contact = () => {
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-        console.log(modal)
         emailjs.sendForm(
           'service_se0gp3t', 
           'template_aq14twk', 
           form.current, 
           'MBIa8Sh7M4UFjETFw')
         .then((result) => {
-          console.log(result.text);
           //set modal to true upon sending email
           setModal(true);
           //set Modal state to false after 5 seconds
@@ -34,7 +32,6 @@ const Contact = () => {
             document.querySelector("form").reset();
         }, (error) => {
           document.querySelector("form").reset();
-          console.log(error.text);
           }); 
         
     };
