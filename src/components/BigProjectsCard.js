@@ -2,7 +2,6 @@ import React from "react";
 function BigProjectsCard(props) {
     const { name, img, description, github, view, inProgress, techUsed } = props.data;
     let [hoverGear, onHoverGear] = React.useState(false);
-    console.log(hoverGear)
 
     function alternateHover () {
         onHoverGear(newVal => !newVal)
