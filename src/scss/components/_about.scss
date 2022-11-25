@@ -43,6 +43,11 @@
                     font-size: 3rem;
                     padding-block: 15px;    
                 }
+                .svg{
+                    width: 3rem;
+                    padding-block: 12.5px;
+                    filter: invert(36%) sepia(37%) saturate(4620%) hue-rotate(251deg) brightness(93%) contrast(88%); 
+                }
                 h3{
                     font-size: 9px;
                 }
