@@ -35,7 +35,7 @@ export default [
         description: "Face Recognition app made with Clarifai API",
         github: "https://github.com/sayjess/maskine",
         view: "https://maskine.netlify.app/",
-        inProgress: true,
+        inProgress: false,
         techUsed: [
             {
                 id: 1,
@@ -67,6 +67,29 @@ export default [
             {
                 id: 2,
                 name: "tech fa-brands fa-css3-alt"
+            },
+        ]
+    },
+    {
+        id: 4,
+        name: "Nirvana.Co",
+        img: 'https://images.crowdspring.com/blog/wp-content/uploads/2018/12/27130453/pexels-photo-1036856.jpeg',
+        description: "",
+        github: "https://github.com/sayjess/nirvana.co",
+        view: "https://nirvanadotco.netlify.app/",
+        inProgress: true,
+        techUsed: [
+            {
+                id: 1,
+                name: "tech fa-brands fa-react"
+            },
+            {
+                id: 2,
+                name: "tech fa-brands fa-css3-alt"
+            },
+            {
+                id: 3,
+                name: "tech fa-brands fa-sass"
             },
         ]
     }
