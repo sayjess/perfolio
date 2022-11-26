@@ -1,5 +1,4 @@
 /* eslint-disable import/no-anonymous-default-export */
-import React from 'react'
 import perfolio from '../images/big-proj/perfolio.png'
 import meme from '../images/big-proj/meme.png'
 import maskine from "../images/big-proj/maskine.jpeg"

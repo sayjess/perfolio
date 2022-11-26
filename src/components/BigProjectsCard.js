@@ -1,4 +1,5 @@
 import React from "react";
+
 function BigProjectsCard(props) {
     const { name, img, description, github, view, inProgress, techUsed } = props.data;
     let [hoverGear, onHoverGear] = React.useState(false);
@@ -46,7 +47,7 @@ function BigProjectsCard(props) {
                         </div>
                     </div>
                 </div>
-                <h2>
+                <h2 className="card-name">
                     {name}
                 </h2>
             </div>

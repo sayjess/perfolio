@@ -20,9 +20,13 @@
             padding: 5px;
             border-radius: 5px;
         }
-        .card-content{
+        &-content{
             position: relative;
             
+        }
+
+        &-name {
+            text-align: left;
         }
         .tech-used {
             position: absolute;
@@ -116,16 +120,14 @@
             }
         }
         &-desc {
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            display: flex;
+            align-content: flex-start;
+            text-align: left;
         }
     }
     .btn-container {
         display: flex;
         gap: 5px;
-        justify-content: center;
         .btn{
             display: flex;
             align-items: center;
