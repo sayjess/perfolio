@@ -33,7 +33,7 @@ function Home(){
                     <div className="typewriter">{typewriter()}</div>
                 </h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida neque convallis a cras semper auctor. Nulla aliquet enim tortor at.
+                    Hi, I’m Jess — a programmer driven by curiosity and a love for learning new technologies and languages.
                 </p>
                 <div 
                     className="home__btn"
